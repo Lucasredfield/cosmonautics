@@ -1,0 +1,31 @@
+<mat-toolbar class="mat-elevation-z4 mat-typography">
+  <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex>
+    <div  fxLayout="row"  fxFlex>
+      <img id="toolbar-logo" src="./assets/images/logo.png" />
+      <span>Cosmonautics</span>
+    </div>
+    <div fxLayout="row" fxFlex="35">
+      <button mat-button>
+        <mat-icon>fiber_new</mat-icon>
+        Novidades
+      </button>
+      <button mat-button>
+        <mat-icon>star_border</mat-icon>
+        Start
+      </button>
+      <button mat-button>
+        <mat-icon>explore</mat-icon>
+        Explorar
+      </button>
+      <button mat-button>
+        <mat-icon>supervisor_account</mat-icon>
+        Contato
+      </button>
+    </div>
+  </div>
+</mat-toolbar>
+<mat-progress-bar id="progresso" *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+<div id="content" flex>
+  <img src="../../../assets/images/mbr-14.jpg" alt="">
+  <!-- <router-outlet></router-outlet> -->
+</div>
